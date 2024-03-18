@@ -9,13 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Speech to Text`,
+    title: `word wave app`,
     author: {
       name: `Lai Ogunlaja`,
-      summary: `who lives in Chicago building useful things to improve our lives.`,
+      summary: `building useful tools to improve our lives.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A website speaking on the possiblities of online speech to text conversion .`,
+    siteUrl: `https://www.wordwaveapp.com`,
     social: {
       twitter: `LaiO_92`,
     },
@@ -27,6 +27,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.wordwaveapp.com`,
+        stripQueryString: true,
       },
     },
     {

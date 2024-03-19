@@ -7,6 +7,15 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = "https://www.wordwaveapp.com",
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+const isNetlifyProduction = NETLIFY_ENV === "production"
+const siteUrlProd = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 module.exports = {
   siteMetadata: {
     title: `word wave app`,
@@ -15,7 +24,7 @@ module.exports = {
       summary: `building useful tools to improve our lives.`,
     },
     description: `A website speaking on the possiblities of online speech to text conversion .`,
-    siteUrl: `https://www.wordwaveapp.com`,
+    siteUrl: siteUrlProd,
     social: {
       twitter: `LaiO_92`,
     },

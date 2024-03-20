@@ -6,8 +6,8 @@
  */
 
 import * as React from "react"
+import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -31,8 +31,15 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
-      {/* <StaticImage
+    <>
+      <div>
+        <p>
+          To get updates, please enter your email address{" "}
+          <Link to="/contact/"> here</Link>:
+        </p>
+      </div>
+      <div className="bio">
+        {/* <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
@@ -42,16 +49,18 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       /> */}
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            Follow my product updates on Twitter
-          </a>
-        </p>
-      )}
-    </div>
+        {author?.name && (
+          <p>
+            Written by <strong>{author.name}</strong> {author?.summary || null}
+            {` Follow my product updates on `}
+            <a href={`https://twitter.com/${social?.twitter || ``}`}>
+              {" "}
+              twitter
+            </a>
+          </p>
+        )}
+      </div>
+    </>
   )
 }
 

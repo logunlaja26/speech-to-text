@@ -55,4 +55,4 @@ I suggest adding a feature to query summarized notes, where the user can ask que
 
 I'm genuinely excited about how this app can solve my productivity problem when summarizing audio into text. I'm pretty sure this will be a helpful tool for your audio-to-text transcription as well.
 
-Feel free to provide your email here for updates about the speech-to-text application.
+Feel free to provide your email below for updates on the speech-to-text application 👇🏻.

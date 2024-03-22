@@ -11,7 +11,7 @@ const ContactForm = () => {
   return (
     <form
       method="POST"
-      action="http://formspree.io/f/mnqebzyy"
+      action="https://formspree.io/f/mnqebzyy"
       //onSubmit={handleSubmit}
       style={{ maxWidth: "500px", margin: "0 auto" }}
     >

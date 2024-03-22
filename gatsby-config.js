@@ -36,6 +36,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-less`,
     `gatsby-plugin-postcss`,
+    "gatsby-plugin-robots-txt",
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {

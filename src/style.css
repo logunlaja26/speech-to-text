@@ -260,6 +260,13 @@ a:focus {
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
+  padding: var(--spacing-4); /* Add padding */
+  background-color: #f5f5f5; /* Light grey background */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  border-radius: 10px; /* Rounded edges */
+}
+.post-list-item:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
 }
 
 .post-list-item p {
@@ -315,6 +322,20 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.read-more-button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-2) var(--spacing-4);
+  text-decoration: none;
+  border-radius: var(--spacing-1);
+  margin-top: var(--spacing-2);
+}
+
+.read-more-button:hover {
+  background-color: #004d88; /* Slightly darker shade of primary color for hover effect */
 }
 
 /* Media queries */

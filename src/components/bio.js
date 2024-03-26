@@ -34,8 +34,8 @@ const Bio = () => {
     <>
       <div>
         <p>
-          To get updates, please enter your email address{" "}
-          <Link to="/contact/"> here</Link>:
+          To get updates, provide your{" "}
+          <Link to="/contact/"> email address</Link> here:
         </p>
       </div>
       <div className="bio">

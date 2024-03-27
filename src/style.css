@@ -264,6 +264,7 @@ a:focus {
   background-color: #f5f5f5; /* Light grey background */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
   border-radius: 20px; /* Rounded edges */
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.4);
 }
 .post-list-item:hover {
   background-color: #e0e0e0; /* Slightly darker grey on hover */

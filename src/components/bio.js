@@ -35,7 +35,12 @@ const Bio = () => {
       <div>
         <p>
           To get updates, provide your{" "}
-          <Link to="/contact/"> email address</Link> here:
+          <a href="https://www.transcribble.app/" target="_blank">
+            {" "}
+            email address
+          </a>{" "}
+          here:
+          {/* <Link to="https://www.transcribble.app/"> email address</Link> here: */}
         </p>
       </div>
       <div className="bio">

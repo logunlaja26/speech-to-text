@@ -78,7 +78,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.wordwaveapp.com`,
+        siteUrl: `https://wordwaveapp.com/`,
         stripQueryString: true,
       },
     },
